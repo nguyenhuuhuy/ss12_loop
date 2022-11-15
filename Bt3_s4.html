@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        let x1 = 1;
+        let x2 = 1;
+        let y;
+        for (let i = 1; i <= 20; i++) {
+            if (x1 % 5 == 0) {
+                document.write(x1 + "<br>");
+                break;
+            }
+            y = x1 + x2;
+            x1 = x2;
+            x2 = y;
+        }
+    </script>
+  </body>
+</html>
